@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A5941F723DD72BF009A9B2E /* UIKitNavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5941F623DD72BF009A9B2E /* UIKitNavigationHelper.swift */; };
+		6A5941FA23DD72F6009A9B2E /* TemplatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5941F823DD72F6009A9B2E /* TemplatePresenter.swift */; };
+		6A5941FB23DD72F6009A9B2E /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5941F923DD72F6009A9B2E /* TemplateViewController.swift */; };
 		6ABC8D3323DD1EDA000EC5B0 /* MaximumViewPresenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABC8D2923DD1ED9000EC5B0 /* MaximumViewPresenter.framework */; };
 		6ABC8D3823DD1EDA000EC5B0 /* MaximumViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC8D3723DD1EDA000EC5B0 /* MaximumViewPresenterTests.swift */; };
 		6ABC8D3A23DD1EDA000EC5B0 /* MaximumViewPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABC8D2C23DD1ED9000EC5B0 /* MaximumViewPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A5941F623DD72BF009A9B2E /* UIKitNavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitNavigationHelper.swift; sourceTree = "<group>"; };
+		6A5941F823DD72F6009A9B2E /* TemplatePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplatePresenter.swift; sourceTree = "<group>"; };
+		6A5941F923DD72F6009A9B2E /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		6ABC8D2923DD1ED9000EC5B0 /* MaximumViewPresenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaximumViewPresenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABC8D2C23DD1ED9000EC5B0 /* MaximumViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaximumViewPresenter.h; sourceTree = "<group>"; };
 		6ABC8D2D23DD1ED9000EC5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 			children = (
 				6ABC8D2C23DD1ED9000EC5B0 /* MaximumViewPresenter.h */,
 				6ABC8D2D23DD1ED9000EC5B0 /* Info.plist */,
+				6A5941F623DD72BF009A9B2E /* UIKitNavigationHelper.swift */,
+				6A5941F823DD72F6009A9B2E /* TemplatePresenter.swift */,
+				6A5941F923DD72F6009A9B2E /* TemplateViewController.swift */,
 			);
 			path = MaximumViewPresenter;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					6ABC8D2823DD1ED9000EC5B0 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					6ABC8D3123DD1EDA000EC5B0 = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5941FA23DD72F6009A9B2E /* TemplatePresenter.swift in Sources */,
+				6A5941F723DD72BF009A9B2E /* UIKitNavigationHelper.swift in Sources */,
+				6A5941FB23DD72F6009A9B2E /* TemplateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		6ABC8D3E23DD1EDA000EC5B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NVV8DM5TFN;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.FocusRealm.MaximumViewPresenter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		6ABC8D3F23DD1EDA000EC5B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NVV8DM5TFN;
@@ -388,6 +404,7 @@
 		6ABC8D4123DD1EDA000EC5B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NVV8DM5TFN;
 				INFOPLIST_FILE = MaximumViewPresenterTests/Info.plist;
@@ -406,6 +423,7 @@
 		6ABC8D4223DD1EDA000EC5B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NVV8DM5TFN;
 				INFOPLIST_FILE = MaximumViewPresenterTests/Info.plist;
