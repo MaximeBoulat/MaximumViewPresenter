@@ -39,7 +39,7 @@ public enum InterfaceState {
 	case cleanup
 }
 
-enum TransitionType {
+public enum TransitionType {
 	case containment(viewTag: Int)
 	case modal(animated: Bool)
 	case navStack
