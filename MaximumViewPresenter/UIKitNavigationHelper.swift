@@ -75,12 +75,12 @@ public class UIKitNavigationHelper {
 		return result
 	}()
 	
-	init(rootViewController: UIViewController, identifier: AnyHashable) {
+	public init(rootViewController: UIViewController, identifier: AnyHashable) {
 		let screenItem = ScreenItem(screen: rootViewController, identifier: identifier)
 		cache[identifier] = screenItem
 	}
 	
-	func basePush(origin: AnyHashable,
+	public func basePush(origin: AnyHashable,
 				  destination: UIViewController,
 				  identifier: AnyHashable,
 				  transition: TransitionType) -> Bool {
@@ -111,7 +111,7 @@ public class UIKitNavigationHelper {
 		
 	}
 	
-	func rewind(origin: AnyHashable) -> Bool {
+	public func rewind(origin: AnyHashable) -> Bool {
 		
 		let result = false
 		
@@ -128,7 +128,7 @@ public class UIKitNavigationHelper {
 		return result
 	}
 	
-	func pop(screen: AnyHashable) -> Bool {
+	public func pop(screen: AnyHashable) -> Bool {
 		
 		guard let found = cache[screen],
 			let parentIdentifier = found.parentIdentifier,
