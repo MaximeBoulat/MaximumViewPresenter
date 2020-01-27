@@ -7,8 +7,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://bitbucket.org/iosmax/maximumviewpresenter/src/master/"
   s.license      = "Copyright (c) 2020 Maxime Boulat"
   s.author             = { "Maxime Boulat" => "" }
-  s.source       = { :git => "https://iosmax@bitbucket.org/iosmax/maximumviewpresenter.git", :tag => "#{s.version}" }
-  s.source_files  = "MaximumViewPresenter/*.{h, swift}"
+s.ios.deployment_target = "10.0"
+  s.source       = { :git => "https://iosmax@bitbucket.org/iosmax/maximumviewpresenter.git", :branch => 'develop' }
+  s.source_files  = "MaximumViewPresenter/*.{h,swift}"
   s.exclude_files = "Classes/Exclude"
   s.requires_arc = true
 
