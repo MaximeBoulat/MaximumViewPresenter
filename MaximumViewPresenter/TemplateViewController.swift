@@ -23,4 +23,8 @@ class TemplateViewController: UIViewController, PresentedProtocol {
 		presenter?.interfaceState = .ready
 	}
 	
+	deinit {
+		presenter?.interfaceState = .cleanup
+	}
+	
 }

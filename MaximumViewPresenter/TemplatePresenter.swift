@@ -21,6 +21,8 @@ class TemplatePresenter: PresenterProtocol {
 			switch interfaceState {
 			case .ready:
 				break
+			case .cleanup:
+				break
 			default:
 				break
 			}

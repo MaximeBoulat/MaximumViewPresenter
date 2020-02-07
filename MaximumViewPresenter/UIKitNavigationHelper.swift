@@ -35,7 +35,6 @@ public protocol DataProviding {
 public enum InterfaceState {
 	case loading
 	case ready
-	case busy
 	case cleanup
 }
 
