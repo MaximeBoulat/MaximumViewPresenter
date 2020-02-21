@@ -166,7 +166,7 @@ public class UIKitNavigationHelper {
 			theDestination = destination
 		} else {
 			theDestination = UINavigationController(rootViewController: destination)
-			theDestination.modalPresentationStyle = .overCurrentContext
+			theDestination.modalPresentationStyle = destination.modalPresentationStyle
 		}
 		
 		dispatchTransition(transition: transition,
