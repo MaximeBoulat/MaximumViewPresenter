@@ -137,6 +137,7 @@ public class UIKitNavigationHelper {
 		}
 		
 		rewindHelper(found: found)
+		trimGraph(screen: found)
 		
 		return pop(screen: found.screen, transitionType: transitionType)
 		
